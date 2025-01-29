@@ -2,10 +2,28 @@
 Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
+<div class="page">
+    <h1 class="title"> To-do list</h1>
 
-<main>
-	Hello word!!!!
-</main>
+
+    <div class="form">
+    <input type="text" class="form-input" placeholder="Введіть задачу...">
+    <button class="form-button">Додати</button>
+    </div>
+
+    <main class="task-list"></main>
+</div>
+
+<template id="task">
+    <div class="task">
+        <span class="task-number">1.</span>
+        <span class="task-text">Some placeholder content in a paragraph below the heading and date.</span>
+        <button class="task-button task-button-do"></button>
+        <button class="task-button task-button-cancel"></button>
+    </div>
+</template>
+
+
 
 {{!
     Цей код містить лише те, що буде виводитись в <body>
